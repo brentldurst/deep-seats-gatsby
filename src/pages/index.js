@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Section, Image, Box, Button, Icon, LinkBox } from "@quarkly/widgets";
+import { Theme, Link, Text, Section, Image, Span, Button, Box, Icon, LinkBox } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
@@ -110,6 +110,12 @@ export default (() => {
 				>
 					Track your sports history with fellow fans and discover new insights into Teams, Players, Merchandise, Travel and More
 				</Text>
+				<Span color="#000000">
+					Some text
+				</Span>
+				<Button type="link" href="/signup" target="_blank">
+					Join Now
+				</Button>
 				<Box
 					min-width="10px"
 					min-height="10px"
@@ -121,24 +127,6 @@ export default (() => {
 					right={0}
 				/>
 			</Box>
-			<Button
-				href="/signup"
-				margin="0px 15px 0px 0px"
-				padding="12px 28px 12px 28px"
-				background="#3b9600"
-				border-radius="8px"
-				font="normal 400 17px/1.5 --fontFamily-sans"
-				sm-margin="0px 0 15px 0px"
-				transition="background-color 0.2s ease 0s"
-				border-width="2px"
-				border-style="#3f24d8"
-				border-color="#3b9600"
-				hover-background="--color-greyD2"
-				hover-transition="--transformOut"
-				target="_blank"
-			>
-				Join Now
-			</Button>
 		</Section>
 		<Section
 			padding="80px 0 80px 0"
@@ -500,9 +488,6 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Link href="/signup" color="#000000" target="_blank">
-			link test
-		</Link>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
