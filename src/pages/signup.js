@@ -4,7 +4,6 @@ import { Theme, Link, Section, Text, Input, Box, Icon, LinkBox } from "@quarkly/
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
-import { GiFairyWings } from "react-icons/gi";
 import { FaFacebook, FaInstagram, FaTwitterSquare, FaGithub, FaYoutube } from "react-icons/fa";
 export default (() => {
 	return <Theme theme={theme}>
@@ -23,6 +22,7 @@ export default (() => {
 			background="#000000"
 			height="auto"
 			width="auto"
+			display="block"
 		>
 			<Override
 				slot="SectionContent"
@@ -46,11 +46,11 @@ export default (() => {
 			md-padding="80px 0 90px 0"
 			quarkly-title="Hero-8"
 			background="#000000"
-			display="grid"
 			border-color="#b91010"
 			position="relative"
 			height="auto"
 			width="auto"
+			max-height="500px"
 		>
 			<Override
 				slot="SectionContent"
@@ -182,9 +182,12 @@ export default (() => {
 			quarkly-title="Footer-11"
 			md-padding="40px 0 40px 0"
 			border-style="solid"
+			display="flex"
 			width="auto"
 			height="auto"
+			position="relative"
 		>
+			<Override slot="SectionContent" height="auto" width="auto" />
 			<Box
 				display="flex"
 				lg-width="100%"
@@ -210,32 +213,6 @@ export default (() => {
 					padding="0px 50px 0px 0px"
 					sm-margin="0px 0px 0px 0px"
 				>
-					<LinkBox
-						justify-content="center"
-						border-radius="100%"
-						width="36px"
-						height="36px"
-						align-items="center"
-						display="flex"
-						href="#"
-					>
-						<Icon
-							category="gi"
-							icon={GiFairyWings}
-							color="#6d32ec"
-							size="37px"
-							margin="0px 0px 0 0px"
-						/>
-					</LinkBox>
-					<Text
-						margin="40px 0px 35px 0px"
-						font="--base"
-						color="#c3c8d0"
-						sm-text-align="left"
-						sm-margin="25px 0px 20px 0px"
-					>
-						It is the best way to improve your professional skills and become more valued
-					</Text>
 					<Box
 						min-width="10px"
 						min-height="10px"

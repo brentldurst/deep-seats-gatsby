@@ -31,11 +31,14 @@ export default (() => {
 				background="#000000"
 			/>
 			<Link
-				href="/index"
+				href="/signup"
 				color="#ffffff"
+				background="#000"
 				font="normal 700 32px/1.2 --fontFamily-sansTrebuchet"
 				target="_blank"
-				link-text-decoration-line="initial"
+				user-select="auto"
+				pointer-events="auto"
+				text-decoration-line="initial"
 			>
 				Deep Seats
 			</Link>
@@ -45,12 +48,12 @@ export default (() => {
 			md-padding="80px 0 90px 0"
 			quarkly-title="Hero-8"
 			background="#000000"
-			display="block"
+			display="flex"
 			border-color="#b91010"
 			position="relative"
 			height="auto"
 			width="auto"
-			max-height="none"
+			max-height="500px"
 		>
 			<Override
 				slot="SectionContent"
@@ -133,6 +136,10 @@ export default (() => {
 			quarkly-title="Footer-11"
 			md-padding="40px 0 40px 0"
 			border-style="solid"
+			display="flex"
+			width="auto"
+			height="auto"
+			position="relative"
 		>
 			<Override slot="SectionContent" height="auto" width="auto" />
 			<Box
