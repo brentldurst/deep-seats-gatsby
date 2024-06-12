@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://precious-lollipop-dbab69.netlify.app/sitemap-index.xml
