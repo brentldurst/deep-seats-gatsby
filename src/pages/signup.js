@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Section, Input, Box, Icon, LinkBox } from "@quarkly/widgets";
+import { Theme, Link, Section, Text, Input, Box, Icon, LinkBox } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
@@ -16,33 +16,30 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section sm-padding="8px 0 8px 0" quarkly-title="Header-4" border-color="#000000" background="--color-dark">
+		<Section
+			sm-padding="8px 0 8px 0"
+			quarkly-title="Header-4"
+			border-color="#000000"
+			background="#000000"
+			height="auto"
+			width="auto"
+		>
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
 				justify-content="space-between"
-				height="64px"
-				background="--color-dark"
+				height="auto"
+				background="#000000"
 			/>
-			<Text
-				margin="0px 0px 20px 50px"
+			<Link
+				href="/index"
+				color="#ffffff"
 				font="normal 700 32px/1.2 --fontFamily-sansTrebuchet"
-				sm-font="normal 700 42px/1.2 --fontFamily-sans"
-				padding="0px 0 0px 0px"
-				text-align="left"
-				color="--light"
-				lg-padding="0px 0 0px 0"
-				width="50% content-box"
-				display="flex"
-				align-items="flex-start"
-				justify-content="flex-start"
-				align-content="center"
-				max-width="50%"
-				flex-direction="column"
-				flex-wrap="wrap"
+				target="_blank"
+				link-text-decoration-line="initial"
 			>
 				Deep Seats
-			</Text>
+			</Link>
 		</Section>
 		<Section
 			padding="160px 0 170px 0"
@@ -52,7 +49,8 @@ export default (() => {
 			display="grid"
 			border-color="#b91010"
 			position="relative"
-			height="900px"
+			height="auto"
+			width="auto"
 		>
 			<Override
 				slot="SectionContent"
@@ -184,6 +182,8 @@ export default (() => {
 			quarkly-title="Footer-11"
 			md-padding="40px 0 40px 0"
 			border-style="solid"
+			width="auto"
+			height="auto"
 		>
 			<Box
 				display="flex"
