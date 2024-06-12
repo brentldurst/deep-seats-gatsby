@@ -135,6 +135,7 @@ export default (() => {
 				border-color="#3b9600"
 				hover-background="--color-greyD2"
 				hover-transition="--transformOut"
+				target="_blank"
 			>
 				Join Now
 			</Button>
@@ -499,6 +500,9 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
+		<Link href="/signup" color="#000000" target="_blank">
+			link test
+		</Link>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
