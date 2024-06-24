@@ -30,13 +30,13 @@ export default {
 		"light": "#F7FBFF",
 		"lightD1": "#EDF2F6",
 		"lightD2": "#E4E8EC",
-		"green": "#04e34f",
-		"primary": "#0077CC",
+		"green": "#00a83a",
+		"primary": "#007dd2",
 		"secondary": "#FFC400",
 		"orange": "#FF7C22",
 		"red": "#DE350B",
-		"purple": "#FD6DF9",
-		"indigo": "#9B6CFC"
+		"purple": "#da1bd2",
+		"indigo": "#4f02e3"
 	},
 	"fontFamily": {
 		"sans": "-apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
@@ -151,5 +151,5 @@ export default {
 			}
 		}
 	},
-	"version": 1
+	"version": 3
 }

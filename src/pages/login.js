@@ -7,7 +7,7 @@ import { RawHtml, Override } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
-		<GlobalQuarklyPageStyles pageUrl={"signup"} />
+		<GlobalQuarklyPageStyles pageUrl={"login"} />
 		<Helmet>
 			<title>
 				Quarkly export
@@ -67,7 +67,7 @@ export default (() => {
 					justify-items="start"
 					align-content="center"
 				>
-					Sign up
+					Login
 				</Text>
 				<Text
 					margin="0px 0px 0px 0px"
@@ -152,7 +152,7 @@ export default (() => {
 					bottom={0}
 					right="450px"
 				>
-					First Name
+					Password
 				</Text>
 				<Input
 					display="flex"
