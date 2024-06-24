@@ -30,7 +30,7 @@ export default {
 		"light": "#F7FBFF",
 		"lightD1": "#EDF2F6",
 		"lightD2": "#E4E8EC",
-		"green": "#00875A",
+		"green": "#04e34f",
 		"primary": "#0077CC",
 		"secondary": "#FFC400",
 		"orange": "#FF7C22",

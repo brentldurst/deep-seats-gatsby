@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Section, Text, Input, Box, Icon, LinkBox } from "@quarkly/widgets";
+import { Theme, Link, Text, Input, Box, Section, Icon, LinkBox } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
@@ -16,32 +16,6 @@ export default (() => {
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Section
-			sm-padding="8px 0 8px 0"
-			quarkly-title="Header-4"
-			border-color="#000000"
-			background="#000000"
-			height="auto"
-			width="auto"
-			display="block"
-		>
-			<Override
-				slot="SectionContent"
-				flex-direction="row"
-				justify-content="space-between"
-				height="auto"
-				background="#000000"
-			/>
-			<Link
-				href="/index"
-				color="#ffffff"
-				font="normal 700 32px/1.2 --fontFamily-sansTrebuchet"
-				target="_blank"
-				link-text-decoration-line="initial"
-			>
-				Deep Seats
-			</Link>
-		</Section>
-		<Section
 			padding="160px 0 170px 0"
 			md-padding="80px 0 90px 0"
 			quarkly-title="Hero-8"
@@ -51,6 +25,7 @@ export default (() => {
 			height="auto"
 			width="auto"
 			max-height="500px"
+			display="flex"
 		>
 			<Override
 				slot="SectionContent"

@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Section, Image, Text, Span, Button, Box, Icon, LinkBox } from "@quarkly/widgets";
+import { Theme, Link, Box, Image, Text, Span, Button, Section, Icon, LinkBox } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
@@ -15,34 +15,29 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section
-			sm-padding="8px 0 8px 0"
-			quarkly-title="Header-4"
-			border-color="#000000"
-			background="#000000"
-			height="auto"
-			width="auto"
+		<Box
+			min-width="100px"
+			min-height="100px"
+			display="block"
+			background="--color-dark"
+			position="relative"
 		>
-			<Override
-				slot="SectionContent"
-				flex-direction="row"
-				justify-content="space-between"
-				height="auto"
-				background="#000000"
-			/>
 			<Link
-				href="/signup"
-				color="#ffffff"
-				background="#000"
-				font="normal 700 32px/1.2 --fontFamily-sansTrebuchet"
-				target="_blank"
-				user-select="auto"
-				pointer-events="auto"
+				href="/index"
+				color="--light"
+				display="flex"
+				height="48px"
+				font="--headline3"
 				text-decoration-line="initial"
+				position="relative"
+				top="25px"
+				left="50px"
+				link-display="flex"
+				target="_blank"
 			>
 				Deep Seats
 			</Link>
-		</Section>
+		</Box>
 		<Section
 			padding="160px 0 170px 0"
 			md-padding="80px 0 90px 0"
@@ -130,6 +125,7 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
+		<Box min-width="100px" min-height="100px" background="--color-green" />
 		<Section
 			padding="80px 0 80px 0"
 			background="#000000"
@@ -139,7 +135,6 @@ export default (() => {
 			display="flex"
 			width="auto"
 			height="auto"
-			position="relative"
 		>
 			<Override slot="SectionContent" height="auto" width="auto" />
 			<Box
